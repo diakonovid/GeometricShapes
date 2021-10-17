@@ -1,12 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using GeometricShapes.Shapes;
 
 namespace GeometricShapes.Examples
 {
-    static class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine(string.Empty);
+            var shapes = new List<Shape>();
+            shapes.Add(new Circle(5));
+            shapes.Add(new Triangle(new[] { 3d, 5d, 4d }));
+
+            foreach (var shape in shapes)
+                Console.WriteLine("Shape {0} with area {1}", shape.GetType().Name, shape.Area);
         }
     }
 }

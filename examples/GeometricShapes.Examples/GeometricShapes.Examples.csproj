@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\GeometricShapes\GeometricShapes.csproj" />
+        <ProjectReference Include="..\..\src\GeometricShapes\GeometricShapes.csproj"/>
     </ItemGroup>
 
 </Project>
